@@ -36,21 +36,18 @@ body::before {
   z-index: 100;
 }
 
+.header p {
+	text-align: center;
+	font-family: "Star Jedi";
+	font-size: 45px;
+	line-height: 100px;
+}
 .blue_mode {
-  color: white;
   text-shadow: 0px 0px 10px #15eaf8, 0px 0px 25px #15eaf8, 0px 0px 50px #15eaf8;
-  text-align: center;
-  font-family: "Star Jedi";
-  font-size: 45px;
-  line-height: 100px;
+
 }
 .red_mode {
-  color: white;
   text-shadow: 0px 0px 10px #f20808, 0px 0px 25px #f20808, 0px 0px 50px #f20808;
-  text-align: center;
-  font-family: "Star Jedi";
-  font-size: 45px;
-  line-height: 100px;
 }
 
 header p a {
@@ -133,7 +130,7 @@ header p a {
   border-radius: 0px 6px 6px 0px;
   width: 120px;
   padding: 15px 10px 15px 10px;
-  background-color: rgba(76, 73, 73, 0.4);
+  background-color: #4b484866;
   font-family: "Roboto Condensed";
   font-size: 18px;
   font-weight: 700;
@@ -147,6 +144,7 @@ header p a {
   right: -25px;
   height: 25px;
   width: 25px;
+  background: white;
   border-radius: 0px 20px 20px 0px;
 } */
 
@@ -167,7 +165,7 @@ header p a {
 .chart img {
   position: absolute;
   top: 38%;
-  left: 105px;
+  left: 92%;
 }
 
 .chart:hover {
