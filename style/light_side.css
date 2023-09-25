@@ -1,0 +1,187 @@
+@import url(common.css);
+
+body {
+  background-image: url(../img/Backgrouds/background_2.jpg);
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+/* _______________ Header _______________ */
+.header {
+  background: rgba(0, 0, 0);
+  height: 100px;
+  /* margin-bottom: 50px; */
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+.header p {
+  color: white;
+  text-shadow: 0px 0px 10px #15eaf8, 0px 0px 25px #15eaf8, 0px 0px 50px #15eaf8;
+  text-align: center;
+  font-family: "Star Jedi";
+  font-size: 45px;
+  line-height: 100px;
+}
+
+header p a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  line-height: 0;
+}
+
+/* _______________ Cards _______________ */
+.cards {
+  background: rgba(0, 0, 0, 0.2);
+  /* border-radius: 6px 6px 6px 6px; */
+  padding: 50px;
+}
+
+.card {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  position: relative;
+  margin-bottom: 80px;
+}
+.card > img {
+  object-fit: cover;
+}
+.card_content {
+  flex-grow: 1;
+}
+.title {
+  font-family: "Star Jedi";
+  font-size: 47px;
+  text-align: center;
+  color: #ffe81f;
+}
+
+.content {
+  font-family: "Roboto Condensed";
+  font-size: 22px;
+  font-weight: 700;
+  font-style: normal;
+  text-align: justify;
+  color: #ffe81f;
+  display: none;
+  position: absolute;
+  top: 0;
+  overflow-y: hidden;
+}
+
+.content p:first-child {
+  padding-bottom: 20px;
+}
+.content p:nth-child(2) {
+  font-weight: normal;
+  font-style: italic;
+}
+
+.content p a {
+  text-decoration: none;
+  color: blue;
+}
+
+.card:hover .card_content .title {
+  display: none;
+}
+
+.card:hover .card_content .content {
+  display: block;
+}
+
+/* _______________ Chart List _______________ */
+.chart {
+  position: fixed;
+  top: 30%;
+  left: -120px;
+}
+
+.chart_list {
+  position: relative;
+  border-radius: 0px 6px 6px 0px;
+  width: 120px;
+  padding: 15px 10px 15px 10px;
+  background-color: rgba(76, 73, 73, 0.4);
+  font-family: "Roboto Condensed";
+  font-size: 18px;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* .chart_list::before {
+  content: "";
+  position: absolute;
+  top: 45%;
+  right: -25px;
+  height: 25px;
+  width: 25px;
+  border-radius: 0px 20px 20px 0px;
+} */
+
+.chart ul > li {
+  padding-bottom: 10px;
+  color: rgb(255, 232, 31);
+  text-align: center;
+}
+.chart ul > li:last-child {
+  padding-bottom: 0;
+}
+
+.chart ul > li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.chart img {
+  position: absolute;
+  top: 38%;
+  left: 105px;
+}
+
+.chart:hover {
+  left: 0;
+  transition: 1s;
+}
+
+.footer {
+  background: rgb(4, 4, 4);
+  height: 100px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.social {
+  padding: 25px 0px;
+  height: 100%;
+  text-align: center;
+}
+
+.item {
+  display: inline-block;
+  line-height: 10px;
+  width: 49px;
+  height: 48px;
+}
+
+.item:active {
+  outline: 1px solid white;
+  border-radius: 50px;
+}
