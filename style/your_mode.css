@@ -24,11 +24,11 @@ body::before {
   background-color: rgba(0, 0, 0, 0.5);
   z-index: -1;
 }
+
 /* _______________ Header _______________ */
 .header {
   background: rgba(0, 0, 0);
   height: 100px;
-  /* margin-bottom: 50px; */
   position: sticky;
   top: 0;
   left: 0;
@@ -63,7 +63,6 @@ header p a {
 /* _______________ Cards _______________ */
 .cards {
   background: rgba(0, 0, 0, 0.2);
-  /* border-radius: 6px 6px 6px 6px; */
   padding: 50px;
 }
 
@@ -76,6 +75,7 @@ header p a {
 }
 .card > img {
   object-fit: cover;
+  flex: 0 0 297px;
 }
 .card_content {
   flex-grow: 1;
