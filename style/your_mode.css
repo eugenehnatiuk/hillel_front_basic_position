@@ -29,11 +29,15 @@ body::before {
 .header {
   background: rgba(0, 0, 0);
   height: 100px;
-  position: sticky;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 100;
+
+}
+main{
+	padding-top: 100px;
 }
 
 .header p {
@@ -67,7 +71,6 @@ header p a {
   display: flex;
   gap: 30px;
   align-items: center;
-  position: relative;
   margin-bottom: 80px;
 }
 .card > img {
@@ -92,8 +95,6 @@ header p a {
   text-align: justify;
   color: #ffe81f;
   display: none;
-  position: absolute;
-  top: 0;
   overflow-y: hidden;
 }
 
@@ -121,8 +122,10 @@ header p a {
 /* _______________ Chart List _______________ */
 .chart {
   position: fixed;
-  top: 30%;
+  top: 50%;
+  margin-top: -136px;
   left: -120px;
+  z-index: 101;
 }
 
 .chart_list {
@@ -175,16 +178,10 @@ header p a {
 /* Footer */
 .footer {
   background: rgb(4, 4, 4);
-  height: 100px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
 }
 
 .social {
   padding: 25px 0px;
-  height: 100%;
   text-align: center;
 }
 
